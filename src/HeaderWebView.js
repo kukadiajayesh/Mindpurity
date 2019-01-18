@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { WebView } from "react-native-webview";
+import { WebView } from 'react-native';
+//import { WebView } from "react-native-webview";
 import Urls from "./Urls";
 import URI from 'urijs';
 
@@ -32,7 +33,7 @@ export default class HeaderWebView extends Component {
 
     render() {
         //console.log(this.props.url)
-        //console.log(this.state.url)
+        console.log(this.state.url)
         return (
             <WebView
                 ref={c => {
@@ -64,10 +65,13 @@ export default class HeaderWebView extends Component {
                         
                     }
                 }}
+                useWebKit={true}
                 onLoadEnd={this.props.onLoadEnd}
                 source={{
-                    uri: this.state.url
+                    uri: this.state.url,
+                    baseUrl: ''
                 }}
+
             />
         );
     }
