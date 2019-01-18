@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mindpurity</string>
+
+    <color name="colorPrimary">#BE2819</color>
+    <color name="colorPrimaryDark">#941e12</color>
+    <color name="colorAccent">#BE2819</color>
 </resources>
